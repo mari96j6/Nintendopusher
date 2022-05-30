@@ -26,6 +26,10 @@ html {
   background-color: var(--white);
 }
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 /* Header */
 .header {
   padding: 10px 16px;
