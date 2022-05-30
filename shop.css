@@ -4,4 +4,27 @@
     grid-template-columns: 1fr 2fr;
     gap: 10px;
   }
+  .kurv {
+    background-color: #dd2020;
+    text-align: center;
+    color: white;
+  }
+  .plus_minus {
+    border: 0.1rem solid grey;
+    text-align: center;
+    margin: 0.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+  .kurv {
+    background-color: #dd2020;
+  }
+  .plus_minus {
+    background-color: grey;
+  }
 }
