@@ -3,14 +3,8 @@ html {
   --black: #0d0c0c;
   --red: #dd2020;
   --darkgrey: #a5a2a2;
-  --lightgrey: #002b49;
-  --rod: #ffffff;
-
-  /* font-size */
-  --h1: 1.25rem;
-  --h2: 1.25rem;
-  --h3: 1.25rem;
-  --p: 1.25rem;
+  --lightgrey: #d3d3d3;
+  --white: #ffffff;
 
   /* paddig */
   --space-xxs: 0.25rem;
@@ -29,18 +23,18 @@ html {
 }
 
 .main {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
 }
 
 /* Header */
 .header {
   padding: 10px 16px;
   background: var(--red);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .content {
-  padding: 16px;
+  padding: var(--space-sm);
 }
 
 .sticky {
@@ -50,5 +44,5 @@ html {
 }
 
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 6.375rem;
 }
