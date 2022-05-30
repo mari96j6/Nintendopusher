@@ -1,24 +1,54 @@
+html {
+  /* farve */
+  --black: #0d0c0c;
+  --red: #dd2020;
+  --darkgrey: #a5a2a2;
+  --lightgrey: #002b49;
+  --rod: #ffffff;
+
+  /* font-size */
+  --h1: 1.25rem;
+  --h2: 1.25rem;
+  --h3: 1.25rem;
+  --p: 1.25rem;
+
+  /* paddig */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+
+  /* anvend ved fx. 
+  h1 {
+  color: var(--xx);
+}
+  */
+}
+
 .main {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 /* Header */
 .header {
-    padding: 10px 16px;
-    background: rgb(185, 6, 6);
-    color: #ffffff;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  .sticky + .content {
-    padding-top: 102px;
-  }
+  padding: 10px 16px;
+  background: rgb(185, 6, 6);
+  color: #ffffff;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
