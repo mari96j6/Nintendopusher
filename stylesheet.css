@@ -53,24 +53,3 @@ p {
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
-
-/* Header */
-.header {
-  padding: 10px 16px;
-  background: var(--red);
-  color: var(--white);
-}
-
-.content {
-  padding: var(--space-sm);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 6.375rem;
-}
