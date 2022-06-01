@@ -1,0 +1,24 @@
+.om.os {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer > * {
+  margin: 20px;
+}
+.åbningstider {
+  display: flex;
+  flex-direction: column;
+}
+.kontaktoplysninger {
+  display: flex;
+  flex-direction: column;
+}
+.nyhedsbrev {
+  margin-bottom: 20px;
+}
