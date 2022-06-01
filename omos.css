@@ -1,5 +1,37 @@
-.om.os {
-  max-width: 1200px;
+html {
+  /* farve */
+  --black: #0d0c0c;
+  --red: #dd2020;
+  --darkgrey: #a5a2a2;
+  --lightgrey: #d3d3d3;
+  --white: #ffffff;
+
+  /* paddig */
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+
+  /* anvend ved fx. 
+  h1 {
+  color: var(--xx);
+}
+  */
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.omos {
+  max-width: 60ch;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
   padding-inline: 1rem;
 }
@@ -21,4 +53,8 @@
 }
 .nyhedsbrev {
   margin-bottom: 20px;
+}
+footer {
+  background-color: var(--red);
+  color: #ffffff;
 }
