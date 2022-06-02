@@ -66,7 +66,7 @@ img {
   }
   .produkt {
     font-size: x-large;
-
+    text-align: center;
     margin: 0.5rem;
   }
 }
