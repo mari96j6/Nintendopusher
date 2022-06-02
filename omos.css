@@ -39,6 +39,8 @@ html {
 .footer {
   display: flex;
   justify-content: space-between;
+  font-family: "Inconsolata&family=Noto+Sans+JP&display=swap", sans-serif;
+  line-height: 1.5rem;
 }
 .footer > * {
   margin: 20px;
@@ -56,5 +58,5 @@ html {
 }
 footer {
   background-color: var(--red);
-  color: #ffffff;
+  color: var(--white);
 }
