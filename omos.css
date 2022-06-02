@@ -29,8 +29,8 @@ html {
 }
 
 .omos {
-  max-width: 60ch;
-  min-height: 90vh;
+  max-width: 50ch;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -38,4 +38,3 @@ html {
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
