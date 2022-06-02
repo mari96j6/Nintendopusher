@@ -31,7 +31,7 @@ function toggleMenu() {
   } else {
     console.log(menuShown); // se i konsollen
     // sæt btn.textContent til "Menu", hvis menuShown er "false"
-    btn.textContent = "=";
+    btn.textContent = "Menu";
   }
 // "toggleMenu()" slutter her
 }
