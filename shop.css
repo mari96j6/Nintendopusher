@@ -1,8 +1,8 @@
 @media (min-width: 600px) {
   .grid_1-2 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
   }
   .kurv {
     background-color: #dd2020;
@@ -25,10 +25,10 @@
   }
 }
 @media (max-width: 600px) {
-  .grid_2-1 {
+  .grid_1-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 1rem;
   }
   .kurv {
     background-color: #dd2020;
@@ -48,5 +48,29 @@
     text-align: center;
     margin: 0.1rem;
     border-radius: 2rem;
+  }
+}
+img {
+  width: 100%;
+  border-radius: 2rem;
+}
+@media (min-width: 600px) {
+  .grid_3col_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .column :last-child {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  .produkt {
+    font-size: x-large;
+    text-align: center;
   }
 }
