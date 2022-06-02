@@ -1,112 +1,128 @@
-div {
-    display: inline-block;
-    position: fixed;
+
+
+.banner {
+  background: #dd2020;
+  padding: 0rem;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0rem;
+  display: inline-flex;
+  gap: 1rem;
+  /* 2. Få elementerne til at stå ved siden af hinanden */
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+}
+
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
   }
-  
-  ul {
-    padding: 0px;
+
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
   }
-  
-  ul li {
-    list-style-type: none;
-    padding: 1ex;
-    position: relative;
-    width: 10em;
+
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
   }
-  
-  ul li > ul {
-    background-color: #ffffff;
-    left: 115%;
-    padding: 0px 0px 0px 1ex;
-    position: absolute;
-    top: 0px;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+
+  .main-menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
   }
-  
-  ul li:not(:hover) > ul {
+
+  #playstation {
     display: none;
   }
-  
-  html, body, div, p, ul, li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 100;
+
+  #playstation.shown  {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
   }
-  
-  .nav {
-    background: #dd2020;
-    height: 60px;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    min-width: 1920px;
-  }
-  
-  .nav li {
-    display: inline-block;
-    list-style: none;
-    height: 60px; 
-    line-height: 60px;
-    padding: 0 40px; 
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: #000000;
-    transition: background .3s;
-  }
-  
-  .nav-link1 {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .nav-link1:hover {
-    color: #dd2020;
-    transition: background .3s;
-  }
-  
-  .nav-link2 {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .nav-link2:hover {
-    color: #dd2020;
-    transition: background .3s;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  .dropdown-content {
+
+  #xbox {
     display: none;
-    position: absolute;
-    background-color: #ffffff;
-    width: 260px;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    text-decoration: none;
   }
-  
-  .dropdown-content li {
-    display: block;
+
+  #xbox.shown  {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
   }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+
+  #nintendo {
+    display: none;
   }
+
+  #nintendo.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  #nintendo {
+    display: none;
+  }
+
+  #nintendo.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  #sega {
+    display: none;
+  }
+
+  #sega.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  #andet {
+    display: none;
+  }
+
+  #andet.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+
+
+
+
+
