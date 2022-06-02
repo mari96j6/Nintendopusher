@@ -1,18 +1,34 @@
-// header js
-window.onscroll = function () {
-  myFunction();
-};
+// Lav variablen "btn", der henviser til ".toggle-btn"
+const btn = document.querySelector(".toggle-btn");
+// Lav variablen "menu", der henviser til ".main-menu"
+const menu = document.querySelector(".main-menu");
+const playstation = document.querySelector("#playstation");
+const playstationBtn = document.querySelector("#ps-toggle-btn");
+const xbox = document.querySelector("#xbox");
+const xboxBtn = document.querySelector("#xboxBtn");
+const nintendo = document.querySelector("#nintendo");
+const nintendoBtn = document.querySelector("#nintendoBtn");
+const sega = document.querySelector("#sega");
+const segaBtn = document.querySelector("#segaBtn");
+const andet = document.querySelector("#andet");
+const andetBtn = document.querySelector("#andetBtn");
 
-var header = document.getElementById("myHeader");
-
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+function toggleMenu() {
+  // a) toggle klassen "shown" på menu vha. classList.toggle
+  menu.classList.toggle("shown");
+  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+  const menuShown = menu.classList.contains("shown");
+  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+  if (menuShown) {
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Luk", hvis menuShown er "true"
+    btn.textContent = "X";
   } else {
-    header.classList.remove("sticky");
+    console.log(menuShown); // se i konsollen
+    // sæt btn.textContent til "Menu", hvis menuShown er "false"
+    btn.textContent = "=";
   }
+  // "toggleMenu()" slutter her
 }
 
 function togglePlaysation() {
