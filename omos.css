@@ -62,3 +62,10 @@ footer {
   background-color: var(--red);
   color: var(--white);
 }
+
+@media (max-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
