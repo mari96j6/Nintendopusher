@@ -1,4 +1,3 @@
-//header javascript
 
 // Lav variablen "btn", der henviser til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
@@ -16,6 +15,8 @@ const andet = document.querySelector("#andet")
 const andetBtn = document.querySelector("#andetBtn")
 // Lav funktionen "toggleMenu()" med følgende funktionalitet
 
+// Lav funktionen "toggleMenu()" med følgende funktionalitet
+
 
 function toggleMenu() {
 
@@ -31,10 +32,12 @@ function toggleMenu() {
   } else {
     console.log(menuShown); // se i konsollen
     // sæt btn.textContent til "Menu", hvis menuShown er "false"
-    btn.textContent = "Menu";
+    btn.textContent = "=";
   }
 // "toggleMenu()" slutter her
 }
+// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
+btn.addEventListener("click", toggleMenu);
 
 function togglePlaysation() {
   playstation.classList.toggle("shown");
@@ -59,18 +62,13 @@ function toggleAndet() {
 btn.addEventListener("click", toggleMenu);
 playstationBtn.addEventListener("click", togglePlaysation);
 xboxBtn.addEventListener("click", toggleXbox);
-nintendoBtn.addEventListener("click", toggleNintendo)
+nintendoBtn.addEventListener("click", toggleNintendo);
 segaBtn.addEventListener("click", toggleSega);
-andetBtn.addEventListener("click", toggleAndet)
-
-
+andetBtn.addEventListener("click", toggleAndet);
 
 //forside javascript
 
-
 window.addEventListener("load", sidenVises);
-
-
 
 function sidenVises() {
   document.querySelector("#button1container").classList.add("buttonColor");
@@ -130,6 +128,5 @@ function slide3() {
 
   document.querySelector("#slide2").classList.add("hide");
   document.querySelector("#slide1").classList.add("hide");
-  document.querySelector("#button3container").classList.add("buttonClicked")
+  document.querySelector("#button3container").classList.add("buttonClicked");
 }
-
