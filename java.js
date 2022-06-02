@@ -66,13 +66,10 @@ andetBtn.addEventListener("click", toggleAndet)
 
 
 //forside javascript
-<<<<<<< HEAD
 
-=======
-window.addEventListener("load", sidenVises);
->>>>>>> 6c7c4137f33e5022b5d7579e2f0c73ec46c3a509
 
 window.addEventListener("load", sidenVises);
+
 
 
 function sidenVises() {
@@ -133,17 +130,6 @@ function slide3() {
 
   document.querySelector("#slide2").classList.add("hide");
   document.querySelector("#slide1").classList.add("hide");
-<<<<<<< HEAD
   document.querySelector("#button3container").classList.add("buttonClicked")
 }
 
-<<<<<<< HEAD
-window.addEventListener("load", sidenVises);
-  document.querySelector("#button3container").classList.add("buttonClicked");
-=======
-window.addEventListener("load", sidenVises)
-=======
-  document.querySelector("#button3container").classList.add("buttonClicked");
-}
->>>>>>> 6c7c4137f33e5022b5d7579e2f0c73ec46c3a509
->>>>>>> eec175691c62a2f0f1734f7b73f5f4b86320d948
