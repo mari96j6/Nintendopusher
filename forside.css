@@ -1,18 +1,11 @@
-main{
-   max-width:1200px; 
-   margin: 0 auto;
-}
 
-img {
-    max-width: 100%;
-}
 
 .gallery {
     width: 100%;
     aspect-ratio: 16/9;
     position: relative;
     overflow: hidden;
-    padding-top: 1em;
+    padding-top: 0em;
 } 
 
 .mySlides{
