@@ -39,34 +39,3 @@ html {
   margin-bottom: 10%;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Inconsolata&family=Noto+Sans+JP&display=swap", sans-serif;
-  line-height: 1.5rem;
-}
-.footer > * {
-  margin: 20px;
-}
-.åbningstider {
-  display: flex;
-  flex-direction: column;
-}
-.kontaktoplysninger {
-  display: flex;
-  flex-direction: column;
-}
-.nyhedsbrev {
-  margin-bottom: 20px;
-}
-footer {
-  background-color: var(--red);
-  color: var(--white);
-}
-
-@media (max-width: 800px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
