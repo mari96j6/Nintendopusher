@@ -21,6 +21,7 @@ html {
 }
   */
 }
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -39,6 +40,9 @@ html {
 .footer {
   display: flex;
   justify-content: space-between;
+  font-family: "Inconsolata&family=Noto+Sans+JP&display=swap", sans-serif;
+  line-height: 1.5rem;
+  display: flex;
 }
 .footer > * {
   margin: 20px;
@@ -56,5 +60,12 @@ html {
 }
 footer {
   background-color: var(--red);
-  color: #ffffff;
+  color: var(--white);
+}
+
+@media (max-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

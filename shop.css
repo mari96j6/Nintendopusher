@@ -1,52 +1,73 @@
 @media (min-width: 600px) {
   .grid_1-2 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
   }
-  .kurv {
+  .køb {
     background-color: #dd2020;
     text-align: center;
     color: white;
     border-radius: 2rem;
+    margin: 0.5rem;
+    position: bottom;
+    font-size: x-large;
+  }
+  .kurv {
+    border: 0.1rem solid grey;
+    text-align: center;
+    margin: 0.1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
     font-size: large;
-  }
-  .plus {
-    border: 0.1rem solid grey;
-    text-align: center;
-    margin: 0.1rem;
-    border-radius: 2rem;
-  }
-  .minus {
-    border: 0.1rem solid grey;
-    text-align: center;
-    margin: 0.1rem;
-    border-radius: 2rem;
   }
 }
 @media (max-width: 600px) {
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 1rem;
   }
-  .kurv {
+  .køb {
     background-color: #dd2020;
     text-align: center;
     color: white;
     border-radius: 2rem;
+    font-size: x-large;
+
+    margin: 0.5rem;
+  }
+  .kurv {
+    border: 0.1rem solid grey;
+    text-align: center;
+    margin: 0.1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
     font-size: large;
   }
-  .plus {
-    border: 0.1rem solid grey;
-    text-align: center;
-    margin: 0.1rem;
-    border-radius: 2rem;
+}
+img {
+  width: 100%;
+  border-radius: 2rem;
+}
+@media (min-width: 600px) {
+  .grid_3col_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
-  .minus {
-    border: 0.1rem solid grey;
-    text-align: center;
-    margin: 0.1rem;
-    border-radius: 2rem;
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .column :last-child {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  .produkt {
+    font-size: x-large;
+
+    margin: 0.5rem;
   }
 }
