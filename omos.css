@@ -35,6 +35,8 @@ html {
   align-items: center;
   margin: 0 auto;
   padding-inline: 1rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .footer {
