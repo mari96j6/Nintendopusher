@@ -53,3 +53,10 @@ p {
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
+
+/* forside video */
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
