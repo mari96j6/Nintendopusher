@@ -129,3 +129,4 @@ function slide3() {
   document.querySelector("#slide1").classList.add("hide");
   document.querySelector("#button3container").classList.add("buttonClicked");
 }
+
