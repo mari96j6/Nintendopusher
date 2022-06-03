@@ -1,0 +1,14 @@
+
+
+form {
+    display: grid;
+    gap: 2rem;
+    max-width: 100%;
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+  
+  .form-felt {
+    display: grid;
+    gap: 3px;
+  }

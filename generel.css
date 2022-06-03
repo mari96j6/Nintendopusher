@@ -146,6 +146,7 @@ img {
   footer {
     background-color: var(--red);
     color: var(--white);
+    bottom: 0;
   }
   
   @media (max-width: 800px) {
