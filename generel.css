@@ -1,8 +1,15 @@
 
+main{
+  max-width:1200px; 
+  margin: 0 auto;
+}
 
+img {
+   max-width: 100%;
+}
 .banner {
   background: #dd2020;
-  padding: 0rem;
+  padding: 0px;
   justify-content: space-between;
   display: flex;
   width: 100%;
@@ -37,16 +44,17 @@
   }
 
   .main-menu ul {
-    display: none; /* Fjern menu-listen som standard */
+    display: none;
+    text-decoration: none; /* Fjern menu-listen som standard */
   }
 
   .main-menu.shown ul {
     /* Vis menu-listen, når klassen ".shown" er til stede */
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
     flex-flow: column;
+    text-decoration: none;
   }
 
   #playstation {
@@ -54,7 +62,6 @@
   }
 
   #playstation.shown  {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -66,7 +73,6 @@
   }
 
   #xbox.shown  {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -78,7 +84,6 @@
   }
 
   #nintendo.shown {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -90,7 +95,6 @@
   }
 
   #nintendo.shown {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -102,7 +106,6 @@
   }
 
   #sega.shown {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -114,7 +117,6 @@
   }
 
   #andet.shown {
-    border-top: 1px solid #000;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
@@ -152,6 +154,21 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+
+a{
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--black);
+} 
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+ #logo {
+   font-size: 2rem;
+ }
   
 
 

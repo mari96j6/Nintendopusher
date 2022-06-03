@@ -42,3 +42,27 @@ html {
 #img {
   display: inline;
 }
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+}
+.grid_1-1-1-1 img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.billede1{
+  grid-column: span 2;
+  grid-row: span 2;
+
+}
+
+.billede4 {
+  grid-column: span 2;
+}
+
